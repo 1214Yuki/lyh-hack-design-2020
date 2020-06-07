@@ -1,2 +1,17 @@
 论文笔记
 
+====
+Enabling Hyper-Personalisation: Automated Ad Creative Generation and Ranking for Fashion e-Commerce
+
+这篇论文主要针对设计商业化，快速自动生成个性化app类应用的banner，自动生成创意，为了满足用户的个性化需求。其实个人感觉就是鹿班换了个场景做应用而已。
+
+从三个方面论述：
+1.	电子商务大规模需要banner的必要性。
+2.	利用现有深度学习，从已有图片中自动批注所打的标签
+3.	基于遗传算法给特定的图像做约束，生成最佳的banner布局
+4.	通过验证，评估banner集，找到最合适的布局
+
+前提：构建一个设计元素库，包含：背景图、文字、logo等，这些算是组成banner基础布局的基本要素
+第二步：Genetic algorithm 将这些基本元素排列布局
+第三步：对设计的考量：考虑排列后布局的对称性、元素见是否有重叠、元素之间的距离等问题，将所有生成的布局进行排名
+第四步：基于banner的数据，构建机器学习模型
